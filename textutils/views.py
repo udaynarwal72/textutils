@@ -5,6 +5,6 @@ def index(request):
 def about(request):
     return HttpResponse(" aboutUday Singh is a good boy") 
 def read(request):
-    with open("1.txt", "r") as d:
-        a= d.read()
+    with open("1.txt", "r+") as d:
+        a= f"<h1>{d.read()}</h1>"
     return HttpResponse(a)

@@ -16,11 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from . import views
-from . import cast
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", views.read, name="read"), 
     path("about", views.about, name="about"),
-    path('nmes', cast.name, name="uday"),
 ]
