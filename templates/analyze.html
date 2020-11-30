@@ -80,73 +80,12 @@
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
-    <div class="container" method="get">
-      <form action="/analyzed">
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">Enter text</label>
-          <textarea
-            name="text"
-            class="form-control"
-            id="exampleFormControlTextarea1"
-            rows="9"
-          ></textarea>
-        </div>
-        <div class="custom-control custom-switch">
-          <input
-            type="checkbox"
-            name="removepunc_checkbox"
-            class="custom-control-input"
-            id="customSwitch1"
-          />
-          <label class="custom-control-label" for="customSwitch1"
-            >Punctuation Remover</label
-          >
-        <div class="custom-control custom-switch">
-          <input
-            type="checkbox"
-            name="fullcaps_checkbox"
-            class="custom-control-input"
-            id="customSwitch1"
-          />
-          <label class="custom-control-label" for="customSwitch1"
-            >Upper Case</label
-          >
-        </div>
-        <div class="custom-control custom-switch">
-          <input
-            type="checkbox"
-            name="removeline_checkbox"
-            class="custom-control-input"
-            id="customSwitch1"
-          />
-          <label class="custom-control-label" for="customSwitch1"
-            >Extra new line remover</label
-          >
-        </div>
-        <div class="custom-control custom-switch">
-          <input
-            type="checkbox"
-            name="removeextraspace_checkbox"
-            class="custom-control-input"
-            id="customSwitch1"
-          />
-          <label class="custom-control-label" for="customSwitch1"
-            >Extraspace Remover</label
-          >
-        </div>
-        <div class="custom-control custom-switch">
-          <input
-            type="checkbox"
-            name="charactercount_checkbox"
-            class="custom-control-input"
-            id="customSwitch1"
-          />
-          <label class="custom-control-label" for="customSwitch1"
-            >Character counter</label
-          >
-        </div>
-        <button type="submit" class="btn btn-dark mt-2">Analyze Text</button>
-      </form>
+    <div class="container">
+        <h1>Congrats!</h1><br>
+        <h2>Your text has been analyzed</h2>
+        <p><pre> {{text_analyzed}}</pre>
+           
+        </p>
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
