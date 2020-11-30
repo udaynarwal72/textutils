@@ -42,7 +42,10 @@ def analyzed(request):
         params = {"purpose": "remove Line", "text_analyzed": user_text_result}
         return render(request, 'analyze.html', params)
     elif user_input_removeextraspace == "on":
-        user_text_result = user_text.replace("  ", " ")
+        user_text_result = ""
+        for index, char in enumerate(user_text):
+            if not(user_text[index] == " " and user_text[index+1]==" "):
+                user_text_result = user_text_result + char
         params = {"purpose": "remove Line", "text_analyzed": user_text_result}
         return render(request, 'analyze.html', params)
     elif user_input_charactercount == "on":
